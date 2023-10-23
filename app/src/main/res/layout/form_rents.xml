@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RentOfCars">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+                    <EditText
+                        android:id="@+id/etNumberDataCar"
+                        android:layout_width="300dp"
+                        android:layout_height="48dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/bg_edittext"
+                        android:ems="10"
+                        android:fontFamily="@font/poppinsmedium"
+                        android:hint="example : 1"
+                        android:inputType="text"
+                        android:paddingStart="8dp"
+                        android:textColorHint="@color/black"
+                        android:textSize="12sp" />
+
+                    <EditText
+                        android:id="@+id/etNameCar"
+                        android:layout_width="300dp"
+                        android:layout_height="48dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/bg_edittext"
+                        android:ems="10"
+                        android:fontFamily="@font/poppinsmedium"
+                        android:hint="example : Avanza 2020"
+                        android:inputType="text"
+                        android:paddingStart="8dp"
+                        android:textColorHint="@color/black"
+                        android:textSize="12sp"
+                        app:layout_constraintTop_toBottomOf="@id/guideline" />
+
+                    <EditText
+                        android:id="@+id/etCarLicenseNumber"
+                        android:layout_width="300dp"
+                        android:layout_height="48dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/bg_edittext"
+                        android:ems="10"
+                        android:fontFamily="@font/poppinsmedium"
+                        android:hint="example : P 1234 BC"
+                        android:inputType="text"
+                        android:paddingStart="8dp"
+                        android:textColorHint="@color/black"
+                        android:textSize="12sp"
+                        app:layout_constraintTop_toBottomOf="@id/guideline" />
+
+                    <EditText
+                        android:id="@+id/etCustomerName"
+                        android:layout_width="300dp"
+                        android:layout_height="48dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/bg_edittext"
+                        android:ems="10"
+                        android:fontFamily="@font/poppinsmedium"
+                        android:hint="example : Budi Rama"
+                        android:inputType="text"
+                        android:paddingStart="8dp"
+                        android:textColorHint="@color/black"
+                        android:textSize="12sp"
+                        app:layout_constraintTop_toBottomOf="@id/guideline" />
+
+                    <EditText
+                        android:id="@+id/etRentStartDate"
+                        android:layout_width="300dp"
+                        android:layout_height="48dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/bg_edittext"
+                        android:drawableEnd="@drawable/ic_calendar"
+                        android:drawablePadding="8dp"
+                        android:ems="10"
+                        android:fontFamily="@font/poppinsmedium"
+                        android:hint="example : yyyy-mm-dd"
+                        android:inputType="text"
+                        android:paddingStart="8dp"
+                        android:paddingRight="8dp"
+                        android:textColorHint="@color/black"
+                        android:textSize="12sp"
+                        app:layout_constraintTop_toBottomOf="@id/guideline" />
+
+                    <EditText
+                        android:id="@+id/etRentEndDate"
+                        android:layout_width="300dp"
+                        android:layout_height="48dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/bg_edittext"
+                        android:drawableEnd="@drawable/ic_calendar"
+                        android:drawablePadding="8dp"
+                        android:ems="10"
+                        android:fontFamily="@font/poppinsmedium"
+                        android:hint="example : yyyy-mm-dd"
+                        android:inputType="text"
+                        android:paddingStart="8dp"
+                        android:paddingRight="8dp"
+                        android:textColorHint="@color/black"
+                        android:textSize="12sp"
+                        app:layout_constraintTop_toBottomOf="@id/guideline" />
+
+                    <EditText
+                        android:id="@+id/etRentDuration"
+                        android:layout_width="300dp"
+                        android:layout_height="48dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/bg_edittext"
+                        android:drawablePadding="8dp"
+                        android:ems="10"
+                        android:fontFamily="@font/poppinsmedium"
+                        android:hint="example : 2 hours or 3 days"
+                        android:inputType="text"
+                        android:paddingStart="8dp"
+                        android:textColorHint="@color/black"
+                        android:textSize="12sp"
+                        app:layout_constraintTop_toBottomOf="@id/guideline" />
+
+                    <EditText
+                        android:id="@+id/etRentFee"
+                        android:layout_width="300dp"
+                        android:layout_height="48dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/bg_edittext"
+                        android:drawablePadding="8dp"
+                        android:ems="10"
+                        android:fontFamily="@font/poppinsmedium"
+                        android:hint="example : Rp. 200,000"
+                        android:inputType="text"
+                        android:paddingStart="8dp"
+                        android:textColorHint="@color/black"
+                        android:textSize="12sp"
+                        app:layout_constraintTop_toBottomOf="@id/guideline" />
+
+        </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
